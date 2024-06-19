@@ -5,14 +5,12 @@ import lombok.Getter;
 import lombok.Setter;
 import lorenzofoschetti.u5d2.enums.StatoTavolo;
 
-import java.util.UUID;
-
 @Getter
 @Setter
 @AllArgsConstructor
 public class Tavolo {
 
-    private UUID id;
+    private int numeroTavolo;
 
     private int numeroMaxPartecipanti;
 
@@ -21,7 +19,7 @@ public class Tavolo {
     @Override
     public String toString() {
         return "Tavolo{" +
-                "id=" + id +
+                "numeroTavolo=" + numeroTavolo +
                 ", numeroMaxPartecipanti=" + numeroMaxPartecipanti +
                 ", statoTavolo=" + statoTavolo +
                 '}';
