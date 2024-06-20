@@ -64,7 +64,7 @@ public class BeansConfig {
     }
 
     @Bean
-    public Ordine order(@Value("${coperto.prezzo}") int coperto) {
+    public Ordine ordine(@Value("${coperto.prezzo}") int coperto) {
         List<Pizza> pizzeOrdinate = new ArrayList<>();
         pizzeOrdinate.add(Diavola());
         List<Drink> drinkOrdinati = new ArrayList<>();
